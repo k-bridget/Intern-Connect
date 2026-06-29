@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'screens/splash/splashscreen.dart';
 import 'screens/onboarding_screen.dart';
+import 'screens/auth_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         '/onboarding': (context) => const OnboardingScreen(),
-        '/auth': (context) => const Placeholder(),
+        '/auth': (context) => const AuthScreen(),
+        '/home': (context) => const Placeholder(),
       },
     );
   }
